@@ -1,0 +1,191 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color-primary: #082A40;
+    --color-secondary: #8DC641;
+    --color-text: #595959;
+    --color-accent: #FAA71C;
+    overflow-y: scroll;   
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+
+.fa-phone-alt::before {
+    content: "\f879";
+}
+
+.fa-envelope::before {
+    content: "\f0e0";
+}
+
+header {
+    background: var(--color-secondary);
+    width: 100%;
+    height: 5vh;
+    align-content: center;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul .contacts{
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+li a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.extended-header{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 20vh;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    overflow: visible;
+}
+
+.extended-header ul {
+    display: flex;
+    gap: 15px;
+    margin-top: -20px;
+}
+
+.extended-header ul li {
+    list-style: none;
+}
+
+.page-links ul{
+    font-size: 1.5rem;
+    gap: 0 30px;
+    margin-top: -20px;
+}
+
+.social-links ul li:first-child{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    background: var(--color-secondary);
+    border-radius: 30px;
+}
+
+.social-links ul{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-links ul{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-links ul li{
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 60px;
+    text-align: center;
+}
+ 
+.user-links ul li:hover{
+    background: var(--color-secondary);
+    opacity: 0.85;
+    color: white;
+}
+
+.signed-in{
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    cursor:default;
+}
+
+.signed-in:hover{
+    background: var(--color-primary);
+    cursor: default;
+}
+
+.navbar-logo img{
+    width: 100px;
+    height: auto;
+    margin-top: -20px;
+}
+
+form button {
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+main {
+    z-index: 0;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+footer p{
+    padding: 10px;
+    margin: 0;
+}
+
+footer a {
+    color: var(--color-secondary);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
