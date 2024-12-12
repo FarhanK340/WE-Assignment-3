@@ -154,7 +154,7 @@ li a{
     margin-top: -20px;
 }
 
-form button {
+.logout{
     background: var(--color-secondary);
     color: white;
     border: none;

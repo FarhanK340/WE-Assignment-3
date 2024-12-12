@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function showSignupForm()
     {
-        return view('auth.signup');
+        return view('auth.register');
     }
 
     public function register(Request $request)
@@ -28,8 +28,6 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'isadmin' => false,
         ]);
-
-        // dd($request->all());
 
         Auth::login($user);
 

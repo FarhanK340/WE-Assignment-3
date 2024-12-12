@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ZooController extends Controller
@@ -18,12 +20,39 @@ class ZooController extends Controller
 
     public function services()
     {
-        return view('pages.services');
+        $user = auth()->user();
+
+        if ($user->isadmin) {
+            // Fetch all services for admin view
+            $services = Service::all();
+            return view('pages.services-admin', compact('services'));
+        }
+
+        // Fetch all services for regular user view
+        $services = Service::all();
+        return view('pages.services', compact('services'));
     }
 
-    public function contact()
+    public function addService(Request $request)
     {
-        return view('pages.contact');
+        // Validate input
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'price' => 'required|numeric|min:0',
+        ]);
+
+        // Create a new service
+        Service::create($request->only('name', 'price'));
+
+        return redirect()->route('services')->with('success', 'Service added successfully!');
+    }
+
+    public function deleteService($id)
+    {
+        $service = Service::findOrFail($id);
+        $service->delete();
+
+        return redirect()->route('services')->with('success', 'Service deleted successfully!');
     }
 
     public function animals()

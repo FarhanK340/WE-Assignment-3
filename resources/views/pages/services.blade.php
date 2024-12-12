@@ -19,15 +19,13 @@
                 <th>Price</th>
             </tr>
         </thead>
-        <tbody id="services-list">
-            <tr>
-                <td>Entrance Fee</td>
-                <td>$15</td>
-            </tr>
-            <tr>
-                <td>Lion King Enclosure</td>
-                <td>$20</td>
-            </tr>
+        <tbody>
+            @foreach ($services as $service)
+                <tr>
+                    <td>{{ $service->name }}</td>
+                    <td>${{ $service->price }}</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection
