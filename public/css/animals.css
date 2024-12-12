@@ -1,0 +1,72 @@
+main {
+    z-index: 0;
+    position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.overlay {
+    background-color: rgba( 0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.animal-section {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.animal-section h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.animal-section p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+
+}
+
+.rhino {
+    background-image: url(../images/rhino.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.lion {
+    background-image: url(../images/lion.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.elephant {
+    background-image: url(../images/elephant.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

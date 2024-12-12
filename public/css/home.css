@@ -1,0 +1,202 @@
+.highlight {
+    background-image: url(../images/Main-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+    z-index: 1;
+    position: relative;
+    top:-5vh;
+    padding-top: 10vh;
+    padding: 20px;
+    margin-bottom: -5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container{
+    width: 70%;
+    height: 50%;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.overlay h1{
+    color: var(--color-secondary);
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+}
+
+.overlay p{
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.controls button{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.features {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features h2{
+    margin-top: 0;
+    color: var(--color-accent);
+    font-size: 3rem;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    list-style: none; 
+    padding: 0;
+    width: 75%;
+}
+
+.features-list li {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bg-feature{
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-feature-1{
+    background-image: url(../images/Resturant.jpg);
+}
+
+.bg-feature-2{
+    background-image: url(../images/Picnic-area.webp);
+}
+
+.bg-feature-3{
+    background-image: url(../images/gorilla-enclosures.jpg);
+}
+
+.bg-feature-4{
+    background-image: url(../images/visitor-center.jpeg);
+}
+
+.accessibility{
+    background-image: var(--color-accent);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfbfbf;
+    margin-bottom: -10vh;
+    padding-bottom: 10vh;
+    overflow: visible ;
+    z-index: 1;
+
+}
+
+.accessibility h2{
+    font-size: 3rem;
+    margin: 10px 0px;
+    color: var(--color-primary);
+}
+
+.accessibility-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 75%;
+}
+
+.accessibility-img img{
+    width: 550px;
+    padding: 10px 20px;
+}
+
+.accessibility-text{
+    padding: 0px 20px;
+    color: black;
+    font-size: 1.25rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/six-hungry-lion-picnic-spot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials h2 {
+    padding-top: 5vh;
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+
+}
+
+.testimonial {
+    margin-bottom: 20px; 
+    width: 80%;
+    font-size: 1.25rem;
+    font-family: monospace;
+}
+
+.testimonial:nth-last-child(){
+    margin-bottom: 0px;
+}
+
+.overlay-2 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    border-radius: 10px; 
+}
